@@ -68,7 +68,7 @@ jobs:
                   #     flutter drive  --driver=test_driver/integration_test.dart --target=integration_test/app_test.dart -d ${{ matrix.api-level }}
             - name: Run tests
               uses: subosito/flutter-action@master
-                with:
+              with:
                   channel: 'stable'
               - run: |
                   flutter pub get
