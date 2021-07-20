@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
   instrumentation-tests:
     name: Instrumentation tests
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
       fail-fast: true
