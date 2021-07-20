@@ -6,7 +6,7 @@ void main() {
     final counterTextFinder = find.byValueKey('counter');
     final buttonFinder = find.byTooltip('Increment');
 
-    FlutterDriver driver;
+    FlutterDriver? driver;
 
     setUpAll(() async {
       driver = await FlutterDriver.connect();
@@ -14,17 +14,17 @@ void main() {
 
     tearDownAll(() async {
       if (driver != null) {
-        driver.close();
+        driver!.close();
       }
     });
 
     test('starts at 0', () async {
-      expect(await driver.getText(counterTextFinder), "0");
+      expect(await driver!.getText(counterTextFinder), "0");
     });
 
     test('increments the counter', () async {
-      await driver.tap(buttonFinder);
-      expect(await driver.getText(counterTextFinder), "1");
+      await driver!.tap(buttonFinder);
+      expect(await driver!.getText(counterTextFinder), "1");
     });
   });
 }
