@@ -50,6 +50,8 @@ jobs:
           disable-animations: true
           force-avd-creation: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot-save
+          script: |
+            /Users/runner/Library/Android/sdk/tools/bin/emulator -avd ${{ runner.os }} -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot-save
           # script: |
           #     flutter pub get
           #     flutter drive  --driver=test_driver/integration_test.dart --target=integration_test/app_test.dart -d ${{ matrix.api-level }}
