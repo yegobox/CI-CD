@@ -1,11 +1,10 @@
 # Name of your workflow.
 name: flutter drive
-# https://developpaper.com/test-and-deploy-flutter-on-github-actions/
 
 # Trigger the workflow on push or pull request.
 on: [push, pull_request]
 jobs:
-  drive_android:
+  android:
     runs-on: macos-latest
     #creates a build matrix for your jobs
     strategy:
