@@ -1,5 +1,3 @@
-# flutter_actions
-
-Run Flutter Driver tests on GitHub Actions.
-
-[![Build Status](https://github.com/ksheremet/flutter_actions/workflows/flutter%20drive/badge.svg?branch=master)](https://github.com/ksheremet/flutter_actions/actions?query=workflow%3A"flutter+drive"+branch%3Amaster)
+# Why?
+I am Richard, I love software more importantly I am fascinated with quality, that is why
+I am creating this repo to experiment with github actions while I learn on CI/CD and apply them to my daily routine, chat with me at yegobox@gmail.com
