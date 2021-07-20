@@ -63,7 +63,12 @@ jobs:
                   disable-animations: true
                   force-avd-creation: false
                   emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot-save
-                  script: |
-                      flutter pub get
-                      flutter drive  --driver=test_driver/integration_test.dart --target=integration_test/app_test.dart -d ${{ matrix.api-level }}
+                  # script: |
+                  #     flutter pub get
+                  #     flutter drive  --driver=test_driver/integration_test.dart --target=integration_test/app_test.dart -d ${{ matrix.api-level }}
+            - name: Run tests
+              uses: subosito/flutter-action@master
+              run: |
+                  flutter pub get
+                  flutter test --driver=test_driver/integration_test.dart --target=integration_test/app_test.dart -d ${{ matrix.api-level }}
 
