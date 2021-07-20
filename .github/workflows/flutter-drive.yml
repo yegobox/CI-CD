@@ -19,7 +19,7 @@ jobs:
               with:
                   distribution: 'adopt'
                   java-version: 11
-            - run: ./ci_clear_gradle_cache.sh
+            # - run: ./ci_clear_gradle_cache.sh
             - uses: actions/cache@v2
               with:
                   path: |
