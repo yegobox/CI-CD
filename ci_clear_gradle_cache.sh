@@ -1,0 +1,1 @@
+mv ~/.gradle ~/.invalid || true
