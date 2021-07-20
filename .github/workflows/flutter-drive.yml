@@ -61,7 +61,7 @@ jobs:
           api-level: ${{ matrix.api-level }}
           target: ${{ steps.avd-target.outputs.target }}
           disable-animations: true
-          force-avd-creation: false
+          force-avd-creation: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -no-snapshot-save
           # script: |
           #     flutter pub get
